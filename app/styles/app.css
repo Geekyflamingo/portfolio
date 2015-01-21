@@ -1,7 +1,68 @@
-html, body {
-  margin: 20px;
+html {
+  background: url(/mountain.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-body{padding-top:40px;background:#BFD6D0}
+body {
+  /* background:#0E4C7F; */
+  font-family: Lato, sans-serif;
+  background-attachment:fixed;
+  margin: 55px;
+}
 
-.content .card{padding:20px}
+.background{
+  position: fixed;
+  width: 100%;
+}
+
+.about{
+  color: #232C2D;
+  border: solid black 4px;
+  padding: 20px;
+  margin-top: 100px;
+  height: 100%;
+  background: #CCC;
+  border-radius: 15px;
+  top: 270px;
+  position: relative;
+}
+
+.name{
+  color: #6594BC;
+  text-align: center;
+  font-family: Nunito;
+  font-size: 40px;
+  margin: 0px;
+  display: inline;
+  width: 100%;
+}
+
+.footer {
+  position: fixed;
+  left:0px;
+  bottom:0px;
+  height:50px;
+  width:100%;
+}
+
+.links{
+  text-align: center;
+  font-size: 40px;
+  font-family: Nunito;
+}
+
+a[href]:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #068D9D;
+}
+
+.links a[href]{
+  color: #0D0719;
+  text-align: center;
+  text-decoration: none;
+  padding: 100px;
+}
