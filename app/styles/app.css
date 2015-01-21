@@ -1,3 +1,7 @@
 html, body {
   margin: 20px;
 }
+
+body{padding-top:40px;background:#BFD6D0}
+
+.content .card{padding:20px}
