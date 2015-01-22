@@ -1,14 +1,16 @@
+@import url('http://fonts.googleapis.com/css?family=Cousine');
+
 html {
-  background: url(/mountain.jpeg) no-repeat center center fixed;
+  /* background: url(/mountain.jpeg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover; */
 }
 
 body {
-  /* background:#0E4C7F; */
-  font-family: Lato, sans-serif;
+  background: #828282;
+  font-family: Cousine;
   background-attachment:fixed;
   margin: 55px;
 }
@@ -19,22 +21,24 @@ body {
 }
 
 .about{
-  color: #232C2D;
-  border: solid black 4px;
-  padding: 20px;
+  color: #161615;
+  border: solid  #AFFF1C 8px;
+  outline: 4px solid #462255 ;
+  padding: 15px;
   margin-top: 100px;
   height: 100%;
-  background: #CCC;
-  border-radius: 15px;
+  background: #EFF8E2;
+
   top: 270px;
   position: relative;
 }
 
 .name{
-  color: #6594BC;
+  color: #AFFF1C;
+  -webkit-text-stroke: 1px #462255;
   text-align: center;
-  font-family: Nunito;
-  font-size: 40px;
+  font-family: Cousine;
+  font-size: 50px;
   margin: 0px;
   display: inline;
   width: 100%;
@@ -51,7 +55,7 @@ body {
 .links{
   text-align: center;
   font-size: 40px;
-  font-family: Nunito;
+  font-family: Cousine;
 }
 
 a[href]:hover {
@@ -61,8 +65,9 @@ a[href]:hover {
 }
 
 .links a[href]{
-  color: #0D0719;
+  color: #AFFF1C;
   text-align: center;
   text-decoration: none;
   padding: 100px;
+  -webkit-text-stroke: 2px #462255;
 }
