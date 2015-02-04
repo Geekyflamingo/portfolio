@@ -1,7 +1,34 @@
+<div class = "all_projects">
+  <section class="header">
+    <h1>Projects and Skills</h1>
+  </section>
 
-<h1>Projects!</h1>
-
-{{#each project in model}}
-<h2>{{project.title}}</h2>
-<p>{{project.body}}</p>
-{{/each}}
+  <section class="projects">
+    {{#each project in model}}
+      <div class="project">
+        <div class="project_title">
+          <a {{bind-attr href=project.url}}> <strong><h2 class = "project_name">{{project.name}}</h2></strong></a>
+        </div>
+        <a {{bind-attr href=project.github}}><img src="/GitHub-Mark-64px.png" class="project-badge"/></a>
+        <div class = "images">
+          <img {{bind-attr src=project.image}}/>
+          <img {{bind-attr src=project.image_2}}/>
+        </div>
+        <div class="description">
+          <h3 class = "project_description">
+              Description:
+          </h3>
+          <p class = "project_paragraphs">{{project.description}}<p>
+          <h3 class = "project_description">
+              Skills learned:
+          </h3>
+          <ul><p class = "project_paragraphs">
+            {{#each project.skills}}
+            <li>{{.}}</li>
+            {{/each}}
+          </p></ul>
+        </div>
+      </div>
+    {{/each}}
+  </section>
+</div>
