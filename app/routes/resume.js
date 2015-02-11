@@ -11,9 +11,9 @@ export default Ember.Route.extend({
       location: "Denver, CO",
       description: [
       "Wrote permits for air quality and pollution limits.",
-      "Developed new regulations based on statistical analysis of current operations",
-      "Inspected oil and gas sites as part of random inspections",
-      "Provided technical assistance to oil and gas facility owners and operators",
+      "Developed new regulations based on statistical analysis of current operations.",
+      "Inspected oil and gas sites as part of random inspections.",
+      "Provided technical assistance to oil and gas facility owners and operators.",
       "Interacted with applicants and the public to provide information and guidance and to clarify official policy and procedures pertaining to program goals and AQCC regulation.",
       "Analyzed data to determine types of pollutants emitted and calculate emission levels to determine compliance with federal and State air quality regulations.",
       "Instructed facility owners/operators on how to calculate emissions, fill out required reporting forms and how to keep records in accordance with the applicable air quality regulations.",
@@ -28,10 +28,10 @@ export default Ember.Route.extend({
       dates: "Aug 2011 to Aug 2012",
       location: "Littleton, CO",
       description: [
-      "Gained knowledge of concepts such as block modeling, resource estimation, geologic interpretation and geostatistics",
+      "Gained knowledge of concepts such as block modeling, resource estimation, geologic interpretation and geostatistics.",
       "Consulted for mining companies using CAE software to develop mineral analyses.",
-      "Demonstrated timely critical thinking skills while handling customer support issues relating to various software and applications",
-      "Assisted in technical sales support for mining technology solutions"
+      "Demonstrated timely critical thinking skills while handling customer support issues relating to various software and applications.",
+      "Assisted in technical sales support for mining technology solutions."
       ],
     },
 
@@ -41,8 +41,8 @@ export default Ember.Route.extend({
       dates: "July 2011 to Aug 2011",
       location: "Sheridan, CO",
       description: [
-      "Taught earth science to middle school students during an exploratory summer school program",
-      "Developed lesson plans, activities and a field trip for students"
+      "Taught earth science to middle school students during an exploratory summer school program.",
+      "Developed lesson plans, activities and a field trip for students."
       ],
     },
 
