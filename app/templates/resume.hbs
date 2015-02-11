@@ -1,2 +1,74 @@
-Resume!
+<div class= "resume">
+<section class="header">
+  <h1>Resume</h1>
+</section>
+<div class="column1">
+    <section class="contact">
+        <a href="https://www.linkedin.com/pub/rebecca-vasil/"><img src="/linkedin_64.png"/></a>
+        <a href="https://github.com/Geekyflamingo"><img src="/GitHub-Mark-64px.png"/></a>
+        <a href="https://twitter.com/Geekyflamingo"><img src="/Twitter-256.png" class = "twitter"></a>
+        <a href="mailto:rebecca.vasil@gmail.com"><img src = "/Email-256.png" class = "email"></a>
+      </p>
+    </section>
+    <section class="summary">
+      <h2>Summary</h2>
+      <p>
+        I am a creative, organized, driven, and passionate leader with a multitude of experiences.
+        I graduated from Colorado School of Mines with a B.S. in Geology and Geological Engineering.
+        I have excellent written and verbal communication skills.
+        My experiences in academia and the public and private sectors give me a broad base to pull from.
+      </p>
+    </section>
+
+    <section class="school">
+      <h2>Education</h2>
+      <p>
+        <strong>gSchool</strong>
+      </p>
+      <p>
+        Full Stack Developer Program
+      </p>
+      <p>
+        Focusing on Ruby on Rails, HTML, CSS, Ember.js, and JavaScript
+      </p>
+      <p>
+        <strong>Colorado School of Mines</strong>
+      </p>
+      <p>
+        Bachelor of Science in Geology and Geological Engineering
+      </p>
+      <p>
+        Focusing on the mineral and petroleum industries
+      </p>
+    </section>
+
+  </div>
+
+  <div class="column2">
+    <section class="resume_projects">
+      {{#link-to 'projects'}}<h2>Projects and Skills</h2>{{/link-to}}
+    </section>
+
+    <section class="jobs">
+      <h2>Employment</h2>
+      {{#each resume in model}}
+      <div class="job">
+        <div>
+          <p class="employer"><strong>{{resume.employer}}</strong></p>
+          <p class="job-title">{{resume.title}}</p>
+        </div>
+        <div>
+          <p class="date">{{resume.dates}}</p>
+          <p class="location">{{resume.location}}</p>
+        </div>
+          <ul>
+            {{#each resume.description}}
+              <li class = "skills">{{.}}</li>
+            {{/each}}
+          </ul>
+        </div>
+      {{/each}}
+    </section>
+  </div>
+</div>
 {{outlet}}

@@ -166,6 +166,16 @@ section.projects img.project-badge {
   margin: 30px;
 }
 
+.resume{
+  border: solid  #5B077A 8px;
+  box-shadow: 0 0 40px #999999;
+  padding: 15px;
+  height: 100%;
+  position: relative;
+  border-radius: 60px;
+  margin: 30px;
+}
+
 .project_title a[href]{
   text-decoration: none;
   font-weight: 800;
@@ -189,4 +199,32 @@ margin-top: 10px;
 }
 ul{
 padding: none;
+}
+
+
+.resume {
+  clear: both;
+  overflow: hidden;
+}
+
+.job div {
+  display: inline-block;
+  width: 49%;
+}
+.job div .date,
+.job div .location {
+  text-align: right;
+}
+
+.twitter{
+  width: 20%;
+
+}
+
+.email{
+  width: 20%;
+}
+
+.skills{
+  margin-bottom: 10px;
 }
