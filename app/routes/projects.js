@@ -24,10 +24,22 @@ export default Ember.Route.extend({
         image: "/Screen Shot_Notes1.png",
         image_2: "/Screen Shot_Notes2.png",
       },
+
       {
         id: "3",
+        name: "Rantly",
+        description: "Rantly is an app with Ember on the front end and Rails on the backend. It requires users to make rants that are at least 144 characters long and has client/server user auth.",
+        url: "https://arcane-dusk-2928.herokuapp.com/",
+        github: "https://github.com/Geekyflamingo/rantly",
+        skills: ["Ember.js", "Client/Server User Auth by Hand", "Rails API", "Custom Validation Messages on Ember", "Gravatars", "Inline Editing"],
+        image: "/Rantly.png",
+        image_2: "/Rantly_new.png",
+      },
+
+      {
+        id: "4",
         name: "gCamp",
-        description: "A Rails app that has some of the same functionality as Basecamp.",
+        description: "A Rails app that has some of the same functionality as Basecamp. It was the first full Rails app done at gSchool and helped us learn about development processes.",
         url: "https://pure-castle-9433.herokuapp.com/",
         github: "https://github.com/Geekyflamingo/gCamp",
         skills: ["Ruby on Rails", "Bootstrap","Join Tables", "User Authorization", "Rspec", "Capybara"],
