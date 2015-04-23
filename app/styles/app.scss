@@ -4,20 +4,23 @@
 
 @mixin center(){
   -webkit-transform: translate(-50%,-50%);
-      -ms-transform: translate(-50%,-50%);
-          transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
     left:50%;
     top:50%;
 }
 
 
-@import url("//fonts.googleapis.com/css?family=Raleway:400,,800,900");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,,800,900");
+
 html{
   width:100%;
   height: 100%;
 }
+
 body{
   background: -webkit-linear-gradient(rgb(235, 236, 231), rgb(255, 255, 255));
+  background: -moz-linear-gradient(rgb(235, 236, 231), rgb(255, 255, 255));
   background: linear-gradient(rgb(235, 236, 231), rgb(255, 255, 255));
   margin: 0;
   width: 100%;
@@ -35,19 +38,23 @@ body{
   margin-top: 100px;
   margin-left: 720px;
 }
+
 .title{
   font-weight: 800;
-  color: transparent;
+  color: #5B077A;
   font-size:120px;
-  background: url(/tarantula-nebula.jpg) repeat;
-  background-position: 40% 50%;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(transparent, transparent),
+              url(/tarantula-nebula.jpg) repeat;
+  background: -o-linear-gradient(transparent, transparent);
   -webkit-background-clip: text;
+  background-position: 40% 50%;
   position:relative;
   text-align:center;
   line-height:90px;
   letter-spacing: -8px;
-
 }
+
 .subtitle{
   display: block;
   text-align: center;
@@ -65,14 +72,17 @@ a[href]:hover {
   text-decoration: none;
   padding: 100px;
   font-weight: 800;
-  color: transparent;
+  color: #5B077A;
   font-size:45px;
-  background: url(/tarantula-nebula.jpg) repeat;
-  background-position: 40% 50%;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(transparent, transparent),
+              url(/tarantula-nebula.jpg) repeat;
+  background: -o-linear-gradient(transparent, transparent);
   -webkit-background-clip: text;
+  background-position: 40% 50%;
+  background-clip: text;
   text-align:center;
   line-height:90px;
-
 }
 
 .links{
@@ -95,11 +105,14 @@ section.header {
 }
 section.header>h1 {
   font-weight: 800;
-  color: transparent;
+  color: #5B077A;
   font-size:85px;
-  background: url(/tarantula-nebula.jpg) repeat;
-  background-position: 40% 50%;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(transparent, transparent),
+              url(/tarantula-nebula.jpg) repeat;
+  background: -o-linear-gradient(transparent, transparent);
   -webkit-background-clip: text;
+  background-position: 40% 50%;
   position:relative;
   text-align:center;
   line-height:90px;
@@ -185,8 +198,8 @@ section.projects img.project-badge {
 }
 
 .project_name{
-margin-bottom: 20px;
-margin-top: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .project_description{
@@ -197,10 +210,10 @@ margin-top: 10px;
   font-size: 20px;
   margin-left: 20px;
 }
-ul{
-padding: none;
-}
 
+ul{
+  padding: none;
+}
 
 .resume {
   clear: both;
